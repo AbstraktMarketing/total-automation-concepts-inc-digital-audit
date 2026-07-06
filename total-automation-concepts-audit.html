@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Digital Health and Performance Assessment for Total Automation Concepts, Inc. — site audit, keyword analysis, and recommended SEO solution.">
+<meta property="og:title" content="Total Automation Concepts, Inc. — Digital Health &amp; Performance Assessment">
+<meta property="og:description" content="Comprehensive SEO audit, competitor gap analysis, and recommended solution prepared by Abstrakt Marketing Group.">
+<meta property="og:type" content="article">
+<title>Total Automation Concepts, Inc. — Digital Health &amp; Performance Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --maroon: #7B1818;
+  --maroon-dark: #5A1010;
+  --maroon-light: #A83030;
+  --cream: #FAF7F2;
+  --white: #FFFFFF;
+  --charcoal: #1A1A1A;
+  --text: #2D2D2D;
+  --muted: #8A8A8A;
+  --light-gray: #F0EDEA;
+  --border: #E5E0DB;
+  --green: #1B7A3D;
+  --green-light: #E8F5E9;
+  --red: #C41E1E;
+  --red-light: #FFEBEE;
+  --amber: #D4920A;
+  --amber-light: #FFF8E1;
+  --blue: #1557B0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  overflow: hidden;
+}
+.cover-left {
+  background: linear-gradient(160deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.cover-left .cover-logo { flex-shrink: 0; }
+.cover-left .cover-content { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.5rem 0; }
+.cover-left .cover-footer { flex-shrink: 0; }
+.cover-left::before {
+  content: '';
+  position: absolute;
+  top: -20%; right: -30%;
+  width: 80%; height: 80%;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.cover-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+}
+.cover-badge {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem;
+}
+.cover-title {
+  font-size: 3.2rem; font-weight: 800; color: var(--white);
+  line-height: 1.1; margin-bottom: 0; letter-spacing: -0.02em;
+}
+.cover-title span {
+  display: block; font-weight: 300; font-size: 0.95rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-top: 1.25rem; color: rgba(255,255,255,0.5);
+}
+.cover-divider { width: 64px; height: 3px; background: rgba(255,255,255,0.35); margin: 0 0 1rem 0; }
+.cover-client { font-size: 1.2rem; font-weight: 500; color: var(--white); }
+.cover-url { font-size: 0.85rem; color: rgba(255,255,255,0.4); margin-top: 0.2rem; }
+.cover-right {
+  padding: 2.5rem 2.25rem;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: stretch;
+  gap: 1rem; min-width: 0;
+}
+.cover-right > .summary-card { width: 100%; }
+.cover-right .summary-card { padding: 1.25rem 1.5rem; }
+.cover-right .summary-card h3 { margin-bottom: 0.85rem; }
+
+.audit-grid {
+  display: grid; grid-template-columns: auto 1fr auto 1fr;
+  column-gap: 1.25rem; row-gap: 0.55rem;
+  font-size: 0.85rem; align-items: baseline;
+}
+.audit-grid .ag-label { font-weight: 600; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value { font-weight: 800; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value.accent { color: var(--red); }
+.audit-grid .ag-value.warn { color: var(--amber); }
+
+.cover-right .opportunity-list li { font-size: 0.82rem; padding-left: 1.1rem; }
+
+.comp-body { display: grid; grid-template-columns: 132px 1fr; gap: 1rem; align-items: center; }
+.comp-pie { width: 132px; height: 132px; }
+.comp-pie .pie-label {
+  font-size: 4.2px; font-weight: 800; fill: #fff;
+  text-anchor: middle; dominant-baseline: central; font-family: inherit;
+}
+.comp-legend {
+  display: grid; grid-template-columns: auto auto;
+  column-gap: 1.25rem; row-gap: 0.35rem;
+  font-size: 0.82rem; align-items: center; justify-content: start;
+}
+.comp-legend .cl-name { font-weight: 700; }
+.comp-legend .cl-pct { color: var(--muted); font-weight: 600; }
+
+.summary-card {
+  background: var(--white); border-radius: 12px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.summary-card h3 {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--maroon); margin-bottom: 1rem;
+}
+
+.opportunity-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.opportunity-list li {
+  font-size: 0.85rem; color: var(--text);
+  padding-left: 1.2rem; position: relative;
+}
+.opportunity-list li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--maroon); font-weight: 700;
+}
+
+section { padding: 4rem 3rem; max-width: 1300px; margin: 0 auto; }
+.section-header {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 2.5rem; padding-bottom: 1rem;
+  border-bottom: 2px solid var(--maroon);
+}
+.section-number {
+  width: 36px; height: 36px; background: var(--maroon);
+  color: var(--white); font-weight: 800; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; flex-shrink: 0;
+}
+.section-title { font-size: 1.6rem; font-weight: 800; color: var(--charcoal); letter-spacing: -0.01em; }
+
+.card-grid { display: grid; gap: 1rem; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-2-1 { grid-template-columns: 2fr 1fr; }
+.card-grid.cols-1-2 { grid-template-columns: 1fr 2fr; }
+
+.card {
+  background: var(--white); border-radius: 10px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  position: relative; overflow: hidden;
+}
+.card.span-2 { grid-column: span 2; }
+.card.span-3 { grid-column: span 3; }
+.card.span-4 { grid-column: span 4; }
+
+.card-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.card-label .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot.green { background: var(--green); }
+.dot.red { background: var(--red); }
+.dot.amber { background: var(--amber); }
+.dot.blue { background: var(--blue); }
+
+.big-stat { font-size: 2.8rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.big-stat.sm { font-size: 2rem; }
+.big-stat + .stat-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+.big-stat.danger { color: var(--red); }
+.big-stat.warning { color: var(--amber); }
+.big-stat.success { color: var(--green); }
+.big-stat.neutral { color: var(--charcoal); }
+
+.badge {
+  display: inline-block; font-size: 0.7rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 4px; letter-spacing: 0.03em;
+}
+.badge.green { background: var(--green-light); color: var(--green); }
+.badge.red { background: var(--red-light); color: var(--red); }
+.badge.amber { background: var(--amber-light); color: var(--amber); }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table th {
+  background: var(--maroon); color: var(--white);
+  font-weight: 600; font-size: 0.7rem; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.6rem 0.75rem; text-align: left;
+}
+table td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); color: var(--text); }
+table tr:nth-child(even) td { background: var(--light-gray); }
+table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maroon); }
+
+.issue-item {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  padding: 0.5rem 0; font-size: 0.82rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+.issue-item:last-child { border-bottom: none; }
+.issue-icon {
+  width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 800; color: var(--white); margin-top: 1px;
+}
+.issue-icon.error { background: var(--red); }
+.issue-icon.warn { background: var(--amber); }
+
+.header-tree { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 2; }
+.header-tree .tag { font-weight: 600; }
+.header-tree .h1 { color: var(--maroon); }
+.header-tree .h2 { color: var(--blue); }
+.header-tree .h4 { color: var(--muted); }
+.header-tree .miss { color: var(--red); font-style: italic; font-weight: 600; }
+.header-tree .indent { padding-left: 1.5rem; }
+.header-tree .page-label {
+  display: block; color: var(--maroon); font-weight: 700; margin-top: 0.5rem;
+  padding-top: 0.5rem; border-top: 1px solid var(--border);
+}
+.header-tree .page-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.gap-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.gap-hero-card {
+  background: var(--white); border-radius: 12px; padding: 2rem;
+  text-align: center; border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.gap-hero-card .number { font-size: 4rem; font-weight: 900; line-height: 1; letter-spacing: -0.03em; }
+.gap-hero-card .label { font-size: 1rem; font-weight: 600; color: var(--charcoal); margin-top: 0.25rem; }
+.gap-hero-card .sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+
+.rank-bar {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.6rem 0.75rem; border-radius: 6px;
+  margin-bottom: 0.4rem; font-size: 0.85rem;
+}
+.rank-bar .name { flex: 1; font-weight: 500; }
+.rank-bar .score { font-weight: 800; font-size: 0.95rem; }
+.rank-bar.winner { background: var(--green-light); }
+.rank-bar.loser { background: var(--red-light); }
+.rank-bar.neutral { background: var(--light-gray); }
+
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.plan-card {
+  background: var(--white); border-radius: 12px;
+  border: 1px solid var(--border); overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.plan-card-header {
+  background: var(--maroon); padding: 1rem 1.25rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.plan-card-header .step { font-size: 1.4rem; font-weight: 900; color: rgba(255,255,255,0.4); }
+.plan-card-header .step-title {
+  font-size: 1rem; font-weight: 700; color: var(--white);
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.plan-card-body { padding: 1.25rem; }
+.plan-card-body h4 { font-size: 0.9rem; font-weight: 700; color: var(--maroon); margin-bottom: 0.75rem; }
+.plan-card-body ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-card-body li { font-size: 0.8rem; color: var(--text); padding-left: 1rem; position: relative; }
+.plan-card-body li::before { content: '•'; position: absolute; left: 0; color: var(--maroon); font-weight: 700; }
+.plan-card-body .callout {
+  font-size: 0.75rem; color: var(--maroon); font-style: italic;
+  margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border);
+}
+
+.full-divider { height: 4px; background: linear-gradient(90deg, var(--maroon), var(--maroon-light), var(--maroon)); margin: 0; }
+
+.progress-bar { height: 6px; background: var(--light-gray); border-radius: 3px; overflow: hidden; margin-top: 0.5rem; }
+.progress-bar .fill { height: 100%; border-radius: 3px; }
+
+.share-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 0.75rem 0; }
+.share-bar > div {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; font-weight: 700; color: white;
+}
+
+@media (max-width: 900px) {
+  .cover { grid-template-columns: 1fr; }
+  .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+  .card-grid.cols-2-1, .card-grid.cols-1-2 { grid-template-columns: 1fr; }
+  .gap-hero, .plan-grid { grid-template-columns: 1fr; }
+  .cover-title { font-size: 2.2rem; }
+  section { padding: 2rem 1.5rem; }
+  .score-layout { grid-template-columns: 1fr !important; }
+}
+
+@media print {
+  body { background: white; }
+  .cover { min-height: auto; page-break-after: always; }
+  section { page-break-inside: avoid; padding: 2rem 1rem; }
+  .full-divider { height: 2px; }
+  .card, .gap-hero-card, .plan-card, .summary-card { box-shadow: none; border: 1px solid #ddd; }
+  .share-bar > div { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .progress-bar .fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+.amg-logo {
+  background-image: url("data:image/png;base64,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");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="cover">
+  <div class="cover-left">
+    <div class="cover-logo"><div class="amg-logo" style="width:180px;height:48px"></div></div>
+    <div class="cover-content">
+      <div class="cover-badge">Prepared for Total Automation Concepts, Inc.</div>
+      <h1 class="cover-title">
+        Digital Health &amp;<br>Performance<br>Assessment
+        <span>Gap Analysis &middot; Recommended Solution</span>
+      </h1>
+    </div>
+    <div class="cover-footer">
+      <div class="cover-divider"></div>
+      <div class="cover-client">Total Automation Concepts, Inc.</div>
+      <div class="cover-url">ta-concepts.com &middot; Building Automation &amp; Controls &middot; Alsip, IL</div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.25);margin-top:0.75rem;letter-spacing:0.04em">July 2026 &middot; Confidential</div>
+    </div>
+  </div>
+  <div class="cover-right">
+
+    
+    <div class="summary-card">
+      <h3>Audit Summary</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem">
+
+        <div style="border-top:3px solid var(--green);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Site Health</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--green);line-height:1">84%</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">Semrush audit</div>
+        </div>
+
+        <div style="border-top:3px solid var(--amber);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Authority Score</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">6</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">156 ref. domains</div>
+        </div>
+
+        <div style="border-top:3px solid var(--text);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Keywords</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--text);line-height:1">127</div>
+          <div style="font-size:0.6rem;color:var(--green);font-weight:700;margin-top:0.1rem">&#8593; +1.6% MoM</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Branded Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">0%</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">of all organic visits</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Organic Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">32</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">visits / month</div>
+        </div>
+
+        <div style="border-top:3px solid var(--green);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">AI Search Health</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--green);line-height:1">83<span style="font-size:0.7rem;font-weight:600;color:var(--muted)">/100</span></div>
+          <div style="font-size:0.6rem;color:var(--green);font-weight:600;margin-top:0.1rem">STRONG</div>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="summary-card">
+      <h3>Biggest Opportunities</h3>
+      <div style="display:flex;flex-direction:column;gap:0.5rem">
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem">Critical</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>69 uncaptured keywords &mdash; 11,540 searches/month TAC doesn&#39;t appear in.</strong> &ldquo;Access control systems chicago&rdquo; alone drives 1,300/mo. BAS-DDC and Althoff rank; TAC does not.</div>
+        </div>
+        <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.25rem">Critical</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>32 organic visits per month &mdash; 1.2% of the competitive cluster.</strong> One keyword drives 69% of all traffic. Althoff captures 1,780 visits/mo &mdash; 55&times; TAC&rsquo;s footprint.</div>
+        </div>
+        <div style="background:var(--amber-light);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem">High</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>GTmetrix Grade D &mdash; 9.9MB homepage with a 4.9MB autoplay video</strong> and a 0.68 layout-shift score. Mobile visitors watch the page jump while it loads.</div>
+        </div>
+        <div style="background:var(--amber-light);border-left:3px solid var(--amber);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem">
+          <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.25rem">High</div>
+          <div style="font-size:0.82rem;color:var(--text)"><strong>A 2000s-era site structure holding the content back.</strong> 42 keyword-stuffed title tags, 48 broken images, 10 missing H1s &mdash; symptoms a rebuild resolves in one pass.</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="summary-card">
+      <h3>Chicago-Metro Search Position</h3>
+      <div style="display:flex;align-items:baseline;gap:0.75rem;margin-bottom:0.65rem">
+        <div style="font-size:2.8rem;font-weight:900;color:var(--red);line-height:1;letter-spacing:-0.03em">1.2%</div>
+        <div style="font-size:0.78rem;color:var(--text);line-height:1.4">TAC&#39;s share of<br>cluster traffic</div>
+      </div>
+      <div style="height:18px;border-radius:4px;overflow:hidden;display:flex;margin-bottom:0.6rem">
+        <div style="width:68.2%;background:var(--charcoal);display:flex;align-items:center;padding-left:0.4rem"><span style="font-size:0.58rem;font-weight:700;color:#fff;white-space:nowrap">Althoff 68.2%</span></div>
+        <div style="width:21.3%;background:var(--maroon);display:flex;align-items:center;padding-left:0.3rem"><span style="font-size:0.58rem;font-weight:700;color:#fff;white-space:nowrap">BAS-DDC 21.3%</span></div>
+        <div style="width:9.3%;background:var(--muted)"></div>
+        <div style="width:1.2%;background:var(--red)"></div>
+      </div>
+      <div style="font-size:0.75rem;color:var(--muted);margin-bottom:0.75rem">For every buyer who finds TAC in search, <strong style="color:var(--text)">80 find a competitor.</strong></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;font-size:0.76rem">
+        <div><span style="color:var(--muted)">TAC traffic:</span> <strong style="color:var(--red)">32/mo</strong></div>
+        <div><span style="color:var(--muted)">Althoff traffic:</span> <strong style="color:var(--text)">1,780/mo</strong></div>
+        <div><span style="color:var(--muted)">TAC keywords:</span> <strong style="color:var(--red)">127</strong></div>
+        <div><span style="color:var(--muted)">Althoff keywords:</span> <strong style="color:var(--text)">2,190</strong></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="full-divider"></div>
+
+
+<div style="background:linear-gradient(135deg,#111111 0%,#1A1A1A 60%,#1f1f1f 100%);border-top:3px solid var(--maroon);padding:0 3rem">
+  <div style="max-width:1300px;margin:0 auto;display:flex;align-items:stretch">
+
+    
+    <div style="display:flex;align-items:center;padding:1.6rem 2.5rem 1.6rem 0;border-right:1px solid rgba(255,255,255,0.08);flex-shrink:0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.9 63.9" style="width:170px;height:32px;display:block">
+        <defs><style>.ib-cls-1{fill:none}.ib-cls-2{fill:#fff}.ib-cls-3{fill:#a21d21}</style></defs>
+        <g>
+          <g>
+            <g>
+              <path class="ib-cls-3" d="M247,39.4c-5.6,0-11.3-2-15.7-5.9l4.8-5.8c3.3,2.8,6.8,4.5,11.1,4.5,3.3,0,5.3-1.3,5.3-3.5v-.1c0-2.1-1.3-3.1-7.4-4.7-7.4-1.9-12.3-4-12.3-11.3v-.1c0-6.7,5.4-11.1,12.9-11.1,5.4,0,10,1.7,13.7,4.7l-4.2,6.1c-3.3-2.3-6.5-3.6-9.6-3.6s-4.8,1.4-4.8,3.2v.1c0,2.4,1.6,3.2,8,4.9,7.5,2,11.7,4.6,11.7,11.1v.1c.1,7.3-5.5,11.4-13.5,11.4z"/>
+              <path class="ib-cls-3" d="M279.1,38.9h-14.4V1.9h14.4c11.6,0,19.7,8,19.7,18.4v.1c0,10.4-8.1,18.5-19.7,18.5zM290.3,20.4c0-6.6-4.5-11.1-11.1-11.1h-6.3v22.3h6.3c6.6,0,11.1-4.5,11.1-11.2z"/>
+              <path class="ib-cls-3" d="M325.3,38.9l-7.9-11.8h-6.4v11.8h-8.1V1.9h16.9c8.7,0,14,4.6,14,12.2v.1c0,6-3.2,9.7-7.9,11.5l9,13.2h-9.6zM325.5,14.5c0-3.5-2.4-5.3-6.4-5.3h-8.1v10.6h8.2c4,0,6.2-2.1,6.2-5.2v-.1z"/>
+            </g>
+            <g>
+              <path class="ib-cls-2" d="M0,50h4.4c4.3,0,7.3,3,7.3,6.8h0c0,3.8-3,6.8-7.2,6.8H0v-13.6zM4.5,63c3.9,0,6.6-2.7,6.6-6.2h0c0-3.5-2.6-6.2-6.6-6.2H.7v12.4h3.8z"/>
+              <path class="ib-cls-2" d="M16.6,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M22.2,56.8h0c0-3.7,2.6-7.1,6.7-7.1,2.1,0,3.5.6,4.8,1.8l-.3.5c-1.2-1-2.4-1.7-4.4-1.7-3.6,0-6,3.1-6,6.4h0c0,3.5,2.3,6.5,6.1,6.5,1.9,0,3.6-.8,4.7-1.8v-4.2h-4.9v-.6h5.5v5.1c-1.3,1.2-3.1,2.1-5.3,2.1-4.4.1-6.9-3.1-6.9-7z"/>
+              <path class="ib-cls-2" d="M39.5,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M49.3,50.6h-4.8v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M62.4,49.9h.6l6.5,13.7h-.7l-1.8-4h-8.4l-1.9,4h-.7l6.4-13.7zM66.6,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M73.6,50h.7v13h8.2v.6h-8.9v-13.6z"/>
+              <path class="ib-cls-2" d="M92.7,61.6l.4-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.8-3.5,4.4-3.5,1.9,0,3.3.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-1.9-.1-3.7-.8-5.3-2.3z"/>
+              <path class="ib-cls-2" d="M107.4,50h9.6v.6h-8.9v5.9h8.1v.6h-8.1v6h9v.6h-9.7v-13.7z"/>
+              <path class="ib-cls-2" d="M127,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM131.2,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M138.2,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM143.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M152.9,56.8h0c0-3.9,2.9-7.1,6.7-7.1,2.5,0,3.9.9,5.2,2.2l-.5.5c-1.1-1.1-2.5-2-4.8-2-3.5,0-6,2.9-6,6.4h0c0,3.5,2.6,6.4,6.1,6.4,2.1,0,3.6-.9,4.9-2.2l.5.5c-1.3,1.3-2.9,2.3-5.4,2.3-3.8.1-6.7-3.1-6.7-7z"/>
+              <path class="ib-cls-2" d="M169.1,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.3v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M195.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M205.4,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.4v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M226.6,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM230.9,59l-3.9-8.4-4,8.4h7.9z"/>
+              <path class="ib-cls-2" d="M239.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M255.2,50h.7l4.3,12.7,4.1-12.7h.5l4.1,12.8,4.3-12.7h.7l-4.7,13.7h-.5l-4.1-12.5-4.1,12.5h-.5l-4.8-13.8z"/>
+              <path class="ib-cls-2" d="M276.8,56.8h0c0-3.8,2.7-7.1,6.8-7.1s6.8,3.3,6.8,7h0c0,3.7-2.7,7-6.8,7s-6.8-3.1-6.8-6.9zM289.8,56.9h0c0-3.5-2.5-6.5-6.1-6.5s-6.1,3-6.1,6.4h0c0,3.5,2.5,6.5,6.2,6.5s6-3,6-6.4z"/>
+              <path class="ib-cls-2" d="M295.3,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM300.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M310.7,50h.7v9.1l9.1-9.1h.9l-5.9,5.9,6.2,7.8h-.9l-5.8-7.3-3.6,3.6v3.7h-.7v-13.7z"/>
+              <path class="ib-cls-2" d="M324.8,61.6l.5-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.9-3.5,4.4-3.5,1.9,0,3.4.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-2.1-.1-3.8-.8-5.4-2.3z"/>
+            </g>
+            <path class="ib-cls-2" d="M147.9,24.5c0,8.9-4.8,13.4-12.2,13.4s-12.5-5-12.5-13.7V3h-2.7v21.5c0,10.3,6.3,15.9,15.1,15.9s15.1-5.6,15.1-16.2V3h-2.7l-.1,21.5z"/>
+            <polygon class="ib-cls-2" points="184.1 35 158.7 3 156.2 3 156.2 39.8 158.8 39.8 158.8 7.1 184.7 39.8 186.8 39.8 186.8 3 184.1 3 184.1 35"/>
+            <path class="ib-cls-2" d="M204.5,3h-12.2v36.8h12.2c11.6,0,19.6-8,19.6-18.4v-.1c0-10.3-8-18.3-19.6-18.3zM221.2,21.5c0,8.8-6.5,15.8-16.7,15.8h-9.5V5.5h9.5c10.2,0,16.7,7.2,16.7,15.9v.1z"/>
+            <path class="ib-cls-2" d="M65.6,20.9c3-1.2,6.3-3.7,6.3-8.7v-.1c0-5.5-4.8-9-11.9-9h-15.3v36.8h16c7.9,0,13.2-3.9,13.2-10v-.1c0-5.2-3.9-7.8-8.3-8.9zM47.4,5.5h12.4c5.9,0,9.2,2.7,9.2,6.8v.1c0,4.9-3.9,7.6-9.5,7.6h-12.1V5.5zM71.1,29.8c0,4.6-4,7.5-10.3,7.5h-13.4v-14.8h12.5c7.2,0,11.2,2.6,11.2,7.1v.2z"/>
+            <rect class="ib-cls-2" x="0" y="3" width="2.7" height="36.8"/>
+            <polygon class="ib-cls-2" points="36.4 35 11 3 8.4 3 8.4 39.8 11 39.8 11 7.1 37 39.8 39 39.8 39 3 36.4 3 36.4 35"/>
+            <g>
+              <path class="ib-cls-2" d="M96.4,0c-11.6,0-20.9,9.4-20.9,20.9s9.4,20.9,20.9,20.9c1.5,0,3-.2,4.4-.5-.1-.1-.1-.2-.2-.3l-.9-2.8c-.7.7-1.5,1.1-2.3,1.3v-8.8l-.6-1.9-.8-2.7-.7-2.3v4.5c-2.4,0-4.8.2-7,.6-.5-2.1-.8-4.5-.9-6.9h7.3l-.2-.6c-.2-.5-.1-1,.1-1.5h-7.2c.1-2.5.4-4.8.9-6.9,2.2.3,4.6.5,7,.6v5.4c.4-.3.8-.4,1.2-.4.3,0,.6.1.9.2v-5.4c2.4,0,4.8-.2,7-.6.5,2.1.8,4.5.9,6.9h-6.2l1.4.9,2.1,1.3h2.7c0,.5,0,1-.1,1.5l.6.4,1.4.9c.1-.9.2-1.8.2-2.8h7.6c-.1,2.3-.7,4.5-1.6,6.5l.1.1,1.6,1s.1,0,.1.1c1.2-2.6,1.9-5.6,1.9-8.7.1-11.6-9.2-20.9-20.7-20.9zM80.5,10.9c1.6.7,3.5,1.2,5.6,1.6-.5,2.2-.8,4.7-.9,7.3h-7.6c.2-3.3,1.3-6.3,2.9-8.9zM80.5,30.9c-1.7-2.6-2.7-5.7-2.9-9h7.6c.1,2.6.4,5.1.9,7.3-2.1.5-4,1.1-5.6,1.7zM95.3,30.5v9c-2.7-.7-5-3.9-6.4-8.5,2-.3,4.2-.5,6.4-.5zM90.4,38.7c-3.4-1.1-6.4-3.2-8.6-6,1.4-.5,3.1-1,4.8-1.4,1,3,2.3,5.6,3.8,7.4zM86.7,10.4c-1.8-.4-3.4-.8-4.8-1.4,2.2-2.7,5.2-4.8,8.6-6-1.6,1.9-2.9,4.4-3.8,7.4zM95.3,11.3c-2.2,0-4.4-.2-6.4-.5,1.4-4.6,3.8-7.8,6.4-8.5v9zM97.4,11.3V2.3c2.7.7,5,3.9,6.4,8.5-2,.3-4.2.4-6.4.5zM102.3,3.1c3.4,1.1,6.4,3.2,8.6,6-1.4.5-3,1-4.8,1.4-1-3.1-2.3-5.6-3.8-7.4zM107.5,19.8c-.1-2.6-.4-5.1-.9-7.3,2.1-.4,4-1,5.6-1.6,1.7,2.6,2.7,5.7,2.9,8.9h-7.6z"/>
+              <path class="ib-cls-3" d="M114.4,30.8l-1.6-1-5.7-3.4-2-1.2-5.3-3.2-2.9-1.8c-.1-.1-.2-.1-.3-.1-.4,0-.7.4-.6.8l1.5,4.8.8,2.7.7,2.2,2,6.4,1.1,3.6c.1.2.2.3.4.4h.2c.2,0,.3-.1.4-.2l.1-.1,2.1-4,2.4,3c.1.2.3.2.5.2.1,0,.3,0,.4-.1l3.3-2.7c.3-.2.3-.6.1-.9l-2.4-3,4.3-1.1h.1l.2-.1c.4-.1.6-.6.3-.9c0-.2,0-.3-.1-.3z"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    
+    <div style="flex:1;display:flex;align-items:stretch">
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">2,000+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Active Clients</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">$1B+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Revenue Generated</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem;background:rgba(123,24,24,0.12)">
+        <div style="width:24px;height:2px;background:var(--maroon-light);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">3.55x</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Avg. Client ROI</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">200+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Industry Awards</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">Inc. 5000</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">10&times; Honoree</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">100K+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Appointments / Year</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number" style="background:var(--charcoal)">&#9733;</div>
+    <h2 class="section-title">Digital Health Score</h2>
+  </div>
+
+  <div class="score-layout" style="display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start">
+    <div class="card" style="text-align:center;padding:2rem">
+      <div style="position:relative;width:180px;height:180px;margin:0 auto 1rem">
+        
+        <svg viewBox="0 0 120 120" style="transform:rotate(-90deg)">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#E5E0DB" stroke-width="10"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#D4920A" stroke-width="10"
+                  stroke-dasharray="327" stroke-dashoffset="147" stroke-linecap="round"/>
+        </svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <div style="font-size:3rem;font-weight:900;color:var(--amber);line-height:1">55</div>
+          <div style="font-size:0.75rem;color:var(--muted);font-weight:600">out of 100</div>
+        </div>
+      </div>
+      <div style="font-size:1.1rem;font-weight:800;color:var(--amber)">NEEDS WORK</div>
+      
+      <p style="font-size:0.88rem;color:var(--text);line-height:1.6;margin-top:0.5rem">A trusted Chicago-area building automation integrator &mdash; #1 for its flagship keyword, 5.0&#9733; on Google &mdash; generating just 32 monthly organic visits and 1.2% of its competitive traffic cluster.</p>
+      
+    </div>
+
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem">
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Health</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">51 errors + 722 warnings across 63 pages; 48 broken images</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">84<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:84%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Speed</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">GTmetrix D &middot; 9.9MB homepage &middot; 0.68 layout shift (CLS)</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">55<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:55%;background:var(--amber)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Keyword Visibility</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">127 keywords; only 6 in the top 10 &mdash; 11,540/mo uncaptured</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">25<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:25%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Content Strategy</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Service + location pages exist; titles stuffed, copy thin</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">45<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:45%;background:var(--amber)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Local SEO</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">5.0&#9733; GBP with 5 reviews; listed in 11 of 25 directories</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">55<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:55%;background:var(--amber)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Competitive Position</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">1.2% of cluster traffic; Althoff holds 68.2%</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">25<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:25%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Security &amp; Technical</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">HTTPS active; 54 HTTP URLs still in sitemap, no HSTS</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">70<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:70%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">AI Search Readiness</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Semrush AI Health 83%; no major AI crawlers blocked</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">78<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:78%;background:var(--green)"></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display:flex;gap:2rem;margin-top:1.5rem;justify-content:center">
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--green)"></div> 70&ndash;100 Strong
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--amber)"></div> 40&ndash;69 Needs Work
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--red)"></div> 0&ndash;39 Critical
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">01</div>
+    <h2 class="section-title">Website Performance</h2>
+  </div>
+
+  
+  <div class="card-grid cols-4" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> CMS Platform</div>
+      <div class="big-stat warning" style="font-size:2rem">WordPress</div>
+      <div class="stat-sub">Aging build; legacy /assets/ structure and 2000s-era title patterns</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Pages Crawled</div>
+      <div class="big-stat warning">63</div>
+      <div class="stat-sub">1 healthy &middot; 56 have issues &middot; 2 redirects &middot; 1 broken &middot; 3 blocked</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> GTmetrix Grade</div>
+      <div class="big-stat warning">D</div>
+      <div class="stat-sub">Performance 47% &middot; CLS 0.68 &middot; 9.9MB page size</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot green"></span> Security</div>
+      <div class="big-stat success" style="font-size:2rem">HTTPS Active</div>
+      <div class="stat-sub">HTTPS site-wide; HTTP homepage variant lacks a canonical or 301</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>48 broken internal images</strong> &mdash; missing product and facility imagery across service pages</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>520 images missing ALT attributes</strong> &mdash; invisible to image search and accessibility scans</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>42 overlong, keyword-stuffed title tags</strong> &mdash; truncated in results and diluting relevance on every page</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>HTTP homepage with no canonical or 301</strong> &mdash; Google sees two competing versions of the front door</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>54 HTTP URLs in sitemap.xml</strong> &mdash; the sitemap points crawlers at the insecure versions of pages</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>10 pages missing an H1</strong> and 46 pages with a low text-to-HTML ratio &mdash; thin on-page signals</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>53 orphaned sitemap pages</strong> &mdash; pages Google is told about but the site itself barely links to</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>0.68 Cumulative Layout Shift</strong> &mdash; the homepage visibly jumps as the 4.9MB hero video loads</div></div>
+      
+    </div>
+    <div class="card">
+      
+      <p style="font-size:0.85rem;color:var(--text);margin-bottom:1rem">Semrush&rsquo;s crawl scored ta-concepts.com at <strong>84% site health</strong> &mdash; a workable foundation &mdash; but flagged <strong>51 errors and 722 warnings</strong> across just 63 pages. The pattern is consistent: the site was built to an older SEO playbook. Titles list every service and every city, images load without dimensions or ALT text, and the homepage carries a 4.9MB video. None of it is broken beyond repair &mdash; it&rsquo;s simply a 2000s-era structure competing against modern sites.</p>
+      <div class="audit-grid">
+        <div class="ag-label">Site Health</div><div class="ag-value" style="color:var(--green)">84%</div>
+        <div class="ag-label">HTTPS Coverage</div><div class="ag-value" style="color:var(--green)">98%</div>
+        <div class="ag-label">GTmetrix Performance</div><div class="ag-value" style="color:var(--red)">47%</div>
+        <div class="ag-label">Layout Stability (CLS)</div><div class="ag-value" style="color:var(--red)">0.68</div>
+        <div class="ag-label">Internal Linking</div><div class="ag-value" style="color:var(--amber)">74%</div>
+        <div class="ag-label">AI Search Health</div><div class="ag-value" style="color:var(--green)">83%</div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">02</div>
+    <h2 class="section-title">Keywords &amp; Traffic</h2>
+  </div>
+
+  <div class="card-grid cols-3" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Total Organic Keywords</div>
+      <div class="big-stat neutral">127</div>
+      <div class="stat-sub">+1.6% MoM; only 6 keywords rank in the top 10</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Organic Traffic</div>
+      <div class="big-stat warning">32<span style="font-size:1.2rem">/mo</span></div>
+      <div class="stat-sub">Estimated traffic value: $0/mo &mdash; no commercial terms captured</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Authority Score</div>
+      <div class="big-stat danger">6</div>
+      <div class="stat-sub">285 backlinks &middot; 156 referring domains &mdash; lowest in the cluster</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Top Organic Keywords</div>
+      <table>
+        <thead><tr><th>Keyword</th><th>Volume</th><th>Position</th><th>Intent</th><th>Traffic</th></tr></thead>
+        <tbody>
+          <tr><td>building automation controls companies</td><td>90</td><td style="color:var(--green);font-weight:700">#1</td><td>Commercial</td><td>22 visits</td></tr>
+          <tr><td>building controls tinley park</td><td>70</td><td style="color:var(--green);font-weight:700">#1</td><td>Commercial</td><td>4 visits</td></tr>
+          <tr><td>lighting control systems chicago il</td><td>40</td><td style="color:var(--green);font-weight:700">#3</td><td>Informational</td><td>3 visits</td></tr>
+          <tr><td>commercial building automation companies</td><td>90</td><td style="color:var(--amber);font-weight:700">#8</td><td>Commercial</td><td>1 visit</td></tr>
+          <tr><td>tac control</td><td>70</td><td style="color:var(--amber);font-weight:700">#8</td><td>Navigational</td><td>1 visit</td></tr>
+          <tr><td>total automation solutions</td><td>50</td><td style="color:var(--amber);font-weight:700">#9</td><td>Navigational</td><td>1 visit</td></tr>
+          <tr><td>building automation systems chicago</td><td>30</td><td style="color:var(--red);font-weight:700">#12</td><td>Commercial</td><td>0 visits</td></tr>
+          <tr><td>what is totally integrated automation</td><td>1,900</td><td style="color:var(--red);font-weight:700">#76</td><td>Informational</td><td>0 visits</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Branded vs. Non-Branded</div>
+      <div style="display:flex;gap:2rem;margin-bottom:1rem">
+        <div>
+          <div class="big-stat sm danger">0%</div>
+          <div class="stat-sub">Branded &mdash; 0 visits</div>
+        </div>
+        <div>
+          <div class="big-stat sm warning">100%</div>
+          <div class="stat-sub">Non-branded &mdash; 32 visits</div>
+        </div>
+      </div>
+      <div class="share-bar">
+        <div style="width:0%;background:var(--maroon)">Branded 0%</div>
+        <div style="width:100%;background:var(--red)">100%</div>
+      </div>
+      <div style="margin-top:1rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keywords by Intent</div>
+        <table>
+          <thead><tr><th>Intent</th><th>Keywords</th><th>Share</th><th>Traffic</th></tr></thead>
+          <tbody>
+            <tr><td>Informational</td><td>40</td><td>31.5%</td><td>6</td></tr>
+            <tr><td>Navigational</td><td>63</td><td>49.6%</td><td>0</td></tr>
+            <tr style="background:var(--amber-light)"><td style="color:var(--amber);font-weight:700">Commercial</td><td>24</td><td>18.9%</td><td>26</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">03</div>
+    <h2 class="section-title">Competitor Keyword Gap</h2>
+  </div>
+
+  
+  <div class="gap-hero">
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">69</div>
+      <div class="label">Keywords Where Competitors<br>Rank &mdash; TAC Doesn&#39;t</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--amber)">11,540</div>
+      <div class="label">Monthly Searches TAC<br>Isn&#39;t Capturing</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">1.2%</div>
+      <div class="label">TAC&#39;s Share of Cluster<br>Traffic (Althoff: 68.2%)</div>
+    </div>
+  </div>
+  
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> What This Means for TAC</div>
+      <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem">Althoff, BAS-DDC, and Stanton Mechanical collectively capture 97.2% of organic traffic in TAC&#39;s core market. Althoff alone holds over two-thirds. These aren&#39;t better integrators &mdash; TAC installs the same Schneider Electric ecosystem and holds a perfect 5.0&#9733; rating &mdash; but their keyword footprints run up to 17&times; larger. Every month TAC stays off those 69 keywords, facility managers build vendor shortlists without TAC on them.</p>
+      <div style="background:var(--maroon);border-radius:8px;padding:1rem 1.25rem">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.5rem">Pipeline Impact &mdash; The Revenue Math</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.85);line-height:1.65">The 11,540 monthly searches TAC doesn&#39;t appear in represent a measurable pipeline gap. As a modeled target: capturing even <strong style="color:rgba(255,200,100,1)">2% of uncaptured search traffic</strong> as site visits (~230/mo) and converting a conservative 2% into a qualified conversation produces <strong style="color:rgba(255,200,100,1)">4&ndash;5 facility-manager conversations per month</strong> that currently go to Althoff and BAS-DDC. Commercial building-automation and access-control projects routinely run five to six figures per building &mdash; even <strong style="color:rgba(255,200,100,1)">one incremental controls project per quarter</strong> would repay the entire program many times over, from a channel currently generating near-zero inbound pipeline.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Organic Keywords by Competitor</div>
+      <div class="rank-bar winner"><span class="name"><strong>Althoff Industries</strong></span><span class="score" style="color:var(--green)">1,780/mo &middot; 2,190 keywords &middot; AS 16</span></div>
+      <div class="rank-bar winner"><span class="name">BAS-DDC</span><span class="score" style="color:var(--green)">555/mo &middot; 186 keywords &middot; AS 9</span></div>
+      <div class="rank-bar neutral"><span class="name">Stanton Mechanical</span><span class="score" style="color:var(--text)">201/mo &middot; 52 keywords &middot; AS 9</span></div>
+      <div class="rank-bar neutral"><span class="name">Delta Building Technologies</span><span class="score" style="color:var(--text)">41/mo &middot; 58 keywords &middot; AS 8</span></div>
+      <div class="rank-bar loser"><span class="name"><strong>TAC (ta-concepts.com)</strong></span><span class="score" style="color:var(--red)">32/mo &middot; 127 keywords &middot; AS 6</span></div>
+      
+    </div>
+  </div>
+
+  <div class="card span-4">
+    <table>
+      <thead><tr><th>Domain</th><th>Auth. Score</th><th>Keywords</th><th>Traffic/mo</th><th>Ref. Domains</th><th>Cluster Share</th></tr></thead>
+      <tbody>
+        <tr class="highlight">
+          <td><strong>TAC (ta-concepts.com)</strong></td><td>6</td><td>127</td><td>32</td><td>156</td><td style="color:var(--red);font-weight:700">1.2%</td>
+        </tr>
+        <tr><td>Althoff Industries</td><td>16</td><td>2,190</td><td>1,780</td><td>161</td><td>68.2%</td></tr>
+        <tr><td>BAS-DDC</td><td>9</td><td>186</td><td>555</td><td>144</td><td>21.3%</td></tr>
+        <tr><td>Stanton Mechanical</td><td>9</td><td>52</td><td>201</td><td>184</td><td>7.7%</td></tr>
+        <tr><td>Delta Building Technologies</td><td>8</td><td>58</td><td>41</td><td>128</td><td>1.6%</td></tr>
+      </tbody>
+    </table>
+    <div class="share-bar" style="margin-top:1rem">
+      <div style="width:68.2%;background:var(--charcoal);display:flex;align-items:center;justify-content:center"><span style="font-size:0.65rem;font-weight:700;color:#fff">Althoff 68.2%</span></div>
+      <div style="width:21.3%;background:var(--maroon);display:flex;align-items:center;justify-content:center"><span style="font-size:0.65rem;font-weight:700;color:#fff">BAS-DDC 21.3%</span></div>
+      <div style="width:9.3%;background:var(--muted);display:flex;align-items:center;justify-content:center"><span style="font-size:0.6rem;font-weight:700;color:#fff">Others</span></div>
+      <div style="width:1.2%;background:var(--red)"></div>
+    </div>
+      
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">04</div>
+    <h2 class="section-title">Top Keyword Opportunities</h2>
+  </div>
+
+  
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px">These 69 keywords represent the highest-value gaps between TAC and its Chicago-metro competitors &mdash; facility managers and property teams actively researching building automation, HVAC controls, and access control. Every one is addressable with a properly structured service page on a rebuilt site.</p>
+      
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <table>
+        <thead><tr><th>Keyword</th><th>Volume</th><th>CPC</th><th>KD</th><th>TAC Position</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>access control systems chicago</td><td>1,300</td><td>&mdash;</td><td>15</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>access control chicago</td><td>1,000</td><td>$23.26</td><td>13</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>hvac automation</td><td>590</td><td>$6.21</td><td>19</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>building automation companies</td><td>480</td><td>$20.53</td><td>38</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>hvac building automation</td><td>480</td><td>&mdash;</td><td>14</td><td>Not Ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>building automation systems hvac</td><td>480</td><td>&mdash;</td><td>20</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>building automation solutions</td><td>390</td><td>&mdash;</td><td>37</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>building automation services</td><td>320</td><td>&mdash;</td><td>50</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>building automation contractor</td><td>170</td><td>&mdash;</td><td>22</td><td>Not Ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>building automation system companies</td><td>140</td><td>&mdash;</td><td>20</td><td>Not Ranking</td><td><span class="badge green">Medium</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Page-to-Keyword Map &mdash; Recommended New Pages</div>
+      <table>
+        <thead><tr><th>Page</th><th>Target Keywords</th><th>Search Volume</th></tr></thead>
+        <tbody>
+          <tr><td>Access Control Systems Chicago Page</td><td>access control systems chicago, access control chicago, installation</td><td>2,370/mo</td></tr>
+          <tr><td>HVAC Building Automation Page</td><td>hvac automation, hvac building automation, hvac automation systems</td><td>1,210/mo</td></tr>
+          <tr><td>Building Automation Companies Hub</td><td>building automation companies, contractor, system companies</td><td>900/mo</td></tr>
+          <tr><td>Building Automation Solutions Page</td><td>building automation solutions, services, smart building automation</td><td>880/mo</td></tr>
+          <tr><td>Rebuilt Service Pages (BAS, Lighting, Energy)</td><td>building automation systems chicago, lighting control, energy management</td><td>Est. 400/mo</td></tr>
+          <tr><td>What Is Building Automation? Guide</td><td>what is totally integrated automation, building controls and automation</td><td>2,040/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">05</div>
+    <h2 class="section-title">SEO Content</h2>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Page Structure &amp; Header Audit</div>
+      <div class="header-tree">
+        <span class="page-label">/ (Homepage)</span>
+        <div><span class="tag">&lt;TITLE&gt;</span> <span class="h1">Building Automation Service, Building Integration System Installation, Security System Service &amp; HVAC Control System Installation | Bolingbrook, IL, Chicago, IL, Downers Grove, IL, Naperville, IL, Oak&hellip;</span></div>
+        <div class="indent miss">&#9888; Four services + six cities crammed into one title &mdash; truncated in results, diluted for every term</div>
+
+        <span class="page-label">/about-us/</span>
+        <div><span class="tag">&lt;TITLE&gt;</span> <span class="h1">Furnace Company, HVAC Contractor &amp; HVAC Company | Bolingbrook, IL&hellip;</span></div>
+        <div class="indent miss">&#9888; The About page is titled &ldquo;Furnace Company&rdquo; &mdash; a residential HVAC term that doesn&rsquo;t match TAC&rsquo;s commercial business at all</div>
+
+        <span class="page-label">/building-automation-systems/</span>
+        <div><span class="tag">&lt;TITLE&gt;</span> <span class="h1">Commercial Building Automation System, Integrated Building Automation, Building Automation System &amp; Building A&hellip;</span></div>
+        <div class="indent miss">&#9888; The flagship service page repeats near-identical phrases instead of targeting &ldquo;building automation companies&rdquo; (480/mo)</div>
+
+        <span class="page-label">/building-access-control/</span>
+        <div><span class="tag">&lt;TITLE&gt;</span> <span class="h1">Electronic Card Access Installation, Building Access Control System, Electronic Card Access Service &amp; Card Acc&hellip;</span></div>
+        <div class="indent miss">&#9888; Zero Chicago targeting on the access-control page while &ldquo;access control systems chicago&rdquo; draws 1,300/mo</div>
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot amber"></span> Service &amp; Location Pages</div>
+      <table>
+        <thead><tr><th>Page</th><th>Status</th><th>Gap</th></tr></thead>
+        <tbody>
+          <tr><td>Building Automation Systems</td><td><span class="badge amber">Exists</span></td><td>Stuffed title, thin copy; ranks #12 for &ldquo;building automation systems chicago&rdquo;</td></tr>
+          <tr><td>Building Access Control</td><td><span class="badge amber">Exists</span></td><td>No Chicago targeting &mdash; misses the 2,370/mo access-control cluster entirely</td></tr>
+          <tr><td>Lighting / Energy / Temperature Control</td><td><span class="badge amber">Exists</span></td><td>Lighting ranks #3 locally &mdash; proof the model works when a page is focused</td></tr>
+          <tr><td>7 Location Pages (Bolingbrook &rarr; Tinley Park)</td><td><span class="badge amber">Exists</span></td><td>Tinley Park ranks #1; the other six carry duplicate stuffed titles and thin copy</td></tr>
+          <tr><td>HVAC Building Automation Page</td><td><span class="badge red">Missing</span></td><td>&ldquo;hvac automation&rdquo; + variants = 1,210/mo; BAS-DDC owns the cluster</td></tr>
+          <tr><td>Building Automation Companies Hub</td><td><span class="badge red">Missing</span></td><td>900/mo across &ldquo;companies / contractor&rdquo; terms; TAC not ranking</td></tr>
+          <tr><td>Industry Pages (Property Mgmt, Education, Healthcare)</td><td><span class="badge red">Missing</span></td><td>&ldquo;Who We Work With&rdquo; page exists but no vertical-specific landing pages</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Blog &amp; Content Publishing</div>
+      <div class="big-stat warning" style="font-size:1.6rem;margin:0.5rem 0 0.25rem">Stalled</div>
+      <div class="stat-sub" style="margin-bottom:1rem">A &ldquo;What&rsquo;s New&rdquo; archive of ~15 legacy articles plus manufacturer white papers &mdash; solid technical topics, none targeting the commercial keywords buyers actually search</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.8rem;margin-bottom:0.85rem">
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.5rem 0.65rem">
+          <div style="font-weight:700;color:var(--charcoal)">~15</div>
+          <div style="color:var(--muted);font-size:0.72rem">Legacy articles in &ldquo;What&rsquo;s New&rdquo;</div>
+        </div>
+        <div style="background:var(--light-gray);border-radius:6px;padding:0.5rem 0.65rem">
+          <div style="font-weight:700;color:var(--red)">0</div>
+          <div style="color:var(--muted);font-size:0.72rem">Posts targeting commercial buyer keywords</div>
+        </div>
+      </div>
+      <div style="background:var(--red-light);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:0.65rem 0.85rem;font-size:0.8rem;color:var(--text)">
+        <strong style="color:var(--red)">Critical gap:</strong> The site&rsquo;s knowledge runs deep &mdash; commissioning white papers, BMS cybersecurity articles, retrofit case content &mdash; but it&rsquo;s written for engineers who already found TAC, not for the facility managers searching &ldquo;building automation companies&rdquo; or &ldquo;access control systems chicago.&rdquo; A consistent content program targeting those buyer terms &mdash; built on a rebuilt site with clean titles and focused pages &mdash; is the fastest path to closing the 69-keyword gap.
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="card-label" style="margin-bottom:0.75rem"><span class="dot red"></span> Missing Content Opportunities</div>
+      <ul style="padding-left:1.1rem;display:flex;flex-direction:column;gap:0.4rem">
+          <li><strong>access control systems chicago</strong> &mdash; 1,300/mo &mdash; TAC not ranking (LaMarco #1)</li>
+          <li><strong>access control chicago</strong> &mdash; 1,000/mo &mdash; TAC not ranking (LaMarco #1)</li>
+          <li><strong>hvac automation</strong> &mdash; 590/mo &mdash; TAC not ranking (BAS-DDC #40)</li>
+          <li><strong>building automation companies</strong> &mdash; 480/mo &mdash; TAC not ranking (BAS-DDC #52)</li>
+          <li><strong>hvac building automation</strong> &mdash; 480/mo &mdash; TAC not ranking (BAS-DDC #14)</li>
+          <li><strong>building automation solutions</strong> &mdash; 390/mo &mdash; TAC not ranking (BAS-DDC #1)</li>
+          <li><strong>building automation services</strong> &mdash; 320/mo &mdash; TAC not ranking (BAS-DDC #2)</li>
+          <li><strong>what is totally integrated automation</strong> &mdash; 1,900/mo &mdash; TAC ranks #76; a focused guide moves it</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="grid-column:span 2;border-left:4px solid var(--amber);margin-top:0.25rem">
+    <div style="display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start">
+      <div>
+        <div class="card-label" style="margin-bottom:0.5rem"><span class="dot amber"></span> Strategic Opportunity &mdash; One Domain, One Front Door</div>
+        <p style="font-size:0.85rem;color:var(--text);line-height:1.65;margin-bottom:0.85rem">TAC&rsquo;s search equity is currently split across <strong>three versions of the same homepage</strong>: http://ta-concepts.com, https://ta-concepts.com, and https://www.ta-concepts.com. The crawl confirmed the HTTP variant returns a live page with no canonical tag and no 301 redirect &mdash; and TAC&rsquo;s single most valuable ranking, <strong>#1 for &ldquo;building automation controls companies&rdquo; (69% of all organic traffic)</strong>, resolves through the www variant with a UTM tracking tag appended. Google is dividing what little authority the domain has (Authority Score 6) across competing URLs. A rebuild consolidates everything to one canonical domain with clean 301s, so every backlink, citation, and ranking reinforces the same front door.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <div style="background:var(--red-light);border:1px solid var(--red);border-radius:6px;padding:0.35rem 0.75rem;font-size:0.75rem"><strong style="color:var(--red)">3 homepage variants</strong> <span style="color:var(--muted)">competing in the index</span></div>
+          <div style="background:var(--red-light);border:1px solid var(--red);border-radius:6px;padding:0.35rem 0.75rem;font-size:0.75rem"><strong style="color:var(--red)">54 HTTP URLs</strong> <span style="color:var(--muted)">still listed in sitemap.xml</span></div>
+          <div style="background:var(--amber-light);border:1px solid var(--amber);border-radius:6px;padding:0.35rem 0.75rem;font-size:0.75rem"><strong style="color:var(--amber)">#1 ranking on a UTM URL</strong> <span style="color:var(--muted)">flagship keyword, tracked variant</span></div>
+          <div style="background:var(--green-light);border:1px solid var(--green);border-radius:6px;padding:0.35rem 0.75rem;font-size:0.75rem"><strong style="color:var(--green)">One-pass fix</strong> <span style="color:var(--muted)">canonical domain + 301 map in the rebuild</span></div>
+        </div>
+      </div>
+      <div style="min-width:220px">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Homepage Variants in the Index</div>
+        <table>
+          <thead><tr><th>URL Variant</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>http://ta-concepts.com</td><td style="color:var(--red);font-weight:700">Live, no 301</td></tr>
+            <tr><td>https://ta-concepts.com</td><td style="color:var(--amber);font-weight:700">Primary</td></tr>
+            <tr><td>https://www.ta-concepts.com</td><td style="color:var(--amber);font-weight:700">Ranks #1 (UTM)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">06</div>
+    <h2 class="section-title">Local SEO &amp; Online Presence</h2>
+  </div>
+
+  <div class="card-grid cols-4" style="margin-bottom:1rem">
+    <div class="card">
+      
+      <div class="card-label"><span class="dot red"></span> NAP Audit</div>
+      <div style="font-size:0.82rem;line-height:1.8">
+        <div><strong>Name:</strong> Total Automation Concepts Inc</div>
+        <div><strong>Address:</strong> 5602 W 120th St</div>
+        <div><strong>City:</strong> Alsip, IL 60803</div>
+        <div><strong>Phone:</strong> (708) 597-3143</div>
+        <div><strong>URL:</strong> ta-concepts.com</div>
+      </div>
+      
+      <div style="background:var(--amber-light);border:1px solid var(--amber);border-radius:6px;padding:0.75rem 1rem;margin-top:0.75rem">
+        <div style="font-size:0.75rem;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.3rem">&#9888; Listing Inconsistency</div>
+        <div style="font-size:0.8rem;color:var(--text)">The Opendi listing is <strong>incomplete &mdash; missing TAC&rsquo;s phone number</strong> &mdash; and address formatting varies across directories (&ldquo;5602 W 120th St&rdquo; vs. &ldquo;5602 West 120th Street&rdquo; vs. &ldquo;5602 120th St&rdquo;). Minor, but consistency is a local ranking signal worth cleaning up.</div>
+      </div>
+      
+    </div>
+    <div class="card">
+      
+      <div class="big-stat success" style="font-size:1.6rem">5.0 &#9733; &middot; 5 Reviews</div>
+      <div class="stat-sub">GBP verified with a perfect rating &mdash; but only 5 reviews of social proof for buyers comparing integrators. Volume is the gap, not quality.</div>
+      
+    </div>
+    <div class="card">
+      
+      <div class="big-stat sm warning">FAIR</div>
+      <div class="stat-sub">11 connected &middot; 1 incomplete &middot; 10 missing across 25 directories scanned</div>
+      
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Key Listing Status</div>
+      <div style="font-size:0.82rem;line-height:2;margin-top:0.75rem">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>Google Business Profile</span><span class="badge green">Verified &middot; 5.0&#9733;</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>YP.com / Cylex / n49</span><span class="badge green">Connected</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>Bing Places</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>Facebook</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>MapQuest</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><span>Opendi</span><span class="badge amber">Incomplete</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card span-4" style="background:var(--charcoal);border-radius:10px;padding:2rem;border:none">
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem">The Local SEO Problem, in One Paragraph</div>
+    <p style="font-size:1rem;color:var(--white);line-height:1.7">TAC&rsquo;s local foundation is genuinely good &mdash; a verified Google Business Profile with a perfect 5.0&#9733; rating, correct NAP, 24-hour availability displayed, and active listings on 11 directories including YP.com and Cylex. The gap is scale, not quality. Five reviews can&rsquo;t compete when facility managers compare integrators, and TAC is absent from Bing, Facebook, MapQuest, and 7 other directories &mdash; missing citation signals that reinforce local rankings for every &ldquo;near me&rdquo; and &ldquo;chicago&rdquo; search. For a company serving Bolingbrook through Tinley Park, a full citation footprint plus a steady review-generation program turns an already-perfect rating into an actual competitive weapon. It&rsquo;s the cheapest win in this entire assessment.</p>
+      
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">07</div>
+    <h2 class="section-title">How Abstrakt Closes the Gap</h2>
+  </div>
+
+  
+  <p style="font-size:0.88rem;color:var(--text);line-height:1.65;max-width:780px">TAC has everything the digital footprint should be amplifying &mdash; decades of Schneider Electric integration experience, a perfect 5.0&#9733; Google rating, 24-hour service, and a proven #1 ranking when a page is properly focused. What&rsquo;s missing is a modern website that turns that credibility into pipeline. Abstrakt closes the gap systematically: rebuilding the site on a clean foundation, publishing the buyer-focused content the current site never had, and putting TAC in front of facility managers at the moment they&rsquo;re searching.</p>
+      
+
+  <div class="plan-grid">
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">1</div>
+        <span class="step-title">Website Rebuild</span>
+      </div>
+      <div class="plan-card-body">
+        
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">The current site is a 2000s-era build: keyword-stuffed titles on 42 pages, 48 broken images, a 9.9MB homepage with a Grade D speed score, and three homepage variants splitting authority. A rebuild resolves all of it in one pass.</p>
+        <h4>What we build</h4>
+        <ul>
+          <li>New WordPress site &mdash; conversion-focused design, in-house dev/design team</li>
+          <li>One canonical domain: 301 map consolidating HTTP / www / UTM variants</li>
+          <li>Clean, focused title tags and H1s on every page &mdash; one target per page</li>
+          <li>Page weight cut from 9.9MB toward Core Web Vitals compliance (CLS 0.68 &rarr; &lt;0.1 target)</li>
+          <li>48 broken images replaced; 520 missing ALT attributes resolved</li>
+          <li>Sitemap rebuilt &mdash; 54 HTTP URLs and 53 orphaned pages corrected</li>
+        </ul>
+        <div class="callout">The lighting page ranks #3 and Tinley Park ranks #1 &mdash; proof the market responds when a page is built right. The rebuild applies that standard everywhere.</div>
+      
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">2</div>
+        <span class="step-title">Content &amp; SEO</span>
+      </div>
+      <div class="plan-card-body">
+        
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">TAC ranks for 127 keywords &mdash; almost none of them commercial buyer terms. 69 gap keywords represent 11,540 monthly searches competitors capture and TAC doesn&rsquo;t. Content on the rebuilt site is the unlock.</p>
+        <h4>What we build</h4>
+        <ul>
+          <li>3,000 words/month: &ldquo;building automation companies,&rdquo; &ldquo;hvac automation,&rdquo; &ldquo;access control systems chicago&rdquo;</li>
+          <li>New landing pages: Access Control Chicago, HVAC Building Automation, Building Automation Companies hub</li>
+          <li>Monthly on-site optimization &mdash; meta tags, H-tags, internal linking, schema markup</li>
+          <li>GBP optimization: review generation program (5 &rarr; 25+ reviews in 12 months)</li>
+          <li>Citation cleanup: Opendi completion + 10 missing directory submissions (Bing, Facebook, MapQuest)</li>
+          <li>FAQ schema on service pages for AI Overview and rich result capture</li>
+          <li>Hosting + monthly site health monitoring included</li>
+        </ul>
+        <div class="callout">Abstrakt clients average 3.55&times; ROI. Organic SEO builds compounding value every month it runs.</div>
+      
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">3</div>
+        <span class="step-title">Paid Search</span>
+      </div>
+      <div class="plan-card-body">
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">An optional accelerator while organic rankings compound: paid search puts TAC on &ldquo;access control systems chicago&rdquo; and &ldquo;building automation companies&rdquo; immediately &mdash; conversion-trained from day one. Our primary metric is <strong>Cost Per Sales Qualified Lead (CPSQL)</strong>, not clicks or impressions.</p>
+        <h4>The Technology Stack</h4>
+        <ul>
+          <li><strong>WhatConverts</strong> &mdash; full attribution reporting; every call, form, and chat tied to the keyword and campaign that generated it</li>
+          <li><strong>ClickCease</strong> &mdash; ad fraud + competitor click waste protection; TAC&#39;s budget goes only to real buyers</li>
+          <li><strong>Conversion Training / Max ROAS</strong> &mdash; closed deals and proposals are fed back into Google/Meta so the AI optimizes for SQLs, not just leads</li>
+          <li>Up to 3 campaigns: Search, Performance Max, and retargeting</li>
+          <li>Negative keyword strategy: exclude residential HVAC and DIY smart-home traffic</li>
+        </ul>
+        <h4>Paid Search Case Study &mdash; Cibes Symmetry</h4>
+        <div style="background:var(--amber-light);border:1px solid var(--amber);border-radius:6px;padding:0.75rem;margin-bottom:0.5rem">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.35rem;font-size:0.78rem">
+            <div style="color:var(--muted)">CPSQL at launch:</div><div style="font-weight:700;color:var(--red)">$700/SQL</div>
+            <div style="color:var(--muted)">CPSQL after 6 months:</div><div style="font-weight:700;color:var(--green)">$171/SQL</div>
+            <div style="color:var(--muted)">Lead volume/mo:</div><div style="font-weight:700;color:var(--charcoal)">200 &rarr; 370</div>
+            <div style="color:var(--muted)">SQL rate:</div><div style="font-weight:700;color:var(--charcoal)">35% &rarr; 86%</div>
+          </div>
+        </div>
+        <div class="callout">Geo: Chicago metro &mdash; Bolingbrook to Tinley Park. Verticals: property management, education, healthcare facilities.</div>
+      
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">08</div>
+    <h2 class="section-title">Recommended Solution</h2>
+  </div>
+
+  <div style="margin-bottom:1.25rem">
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.75rem">Recommended Program</div>
+    <div class="card-grid cols-2">
+
+      <div class="card" style="border:2px solid var(--maroon)">
+<div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">Website + SEO Content Program</div>
+        <div style="font-size:1.8rem;font-weight:900;color:var(--maroon);margin-bottom:0.25rem">$2,500<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">Complete new website build + ongoing SEO content &amp; local program</div>
+        <div style="display:flex;flex-direction:column;gap:0.35rem">
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> New conversion-focused WordPress website &mdash; live in 90 days</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Domain consolidation: one canonical URL, full 301 map</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Focused titles, H1s, and page speed built to Core Web Vitals</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 3,000 words/month targeting the 69 gap keywords post-launch</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> New pages: Access Control Chicago, HVAC Automation, BAS Companies hub</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> GBP optimization + review generation (5 &rarr; 25+ reviews)</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Citation cleanup + 10 missing directory submissions</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Schema markup, monthly reporting, hosting &amp; site health monitoring</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:0.25rem">Paid Media Program <span style="font-size:0.7rem;font-weight:700;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">&middot; Optional Add-On</span></div>
+        <div style="font-size:1.8rem;font-weight:900;color:var(--maroon);margin-bottom:0.25rem">Starts at $1,750<span style="font-size:0.9rem;font-weight:400;color:var(--muted)">/mo</span></div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1rem">For $10,000 in ad spend &middot; scales with spend + results &middot; setup included</div>
+        <div style="display:flex;flex-direction:column;gap:0.35rem">
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> WhatConverts &mdash; full call, form &amp; chat attribution</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> ClickCease &mdash; ad fraud + competitor click protection</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Conversion Training &mdash; SQLs fed back to Google/Meta to train Max ROAS</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Up to 3 campaigns: Search, PMAX, retargeting</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Immediate visibility on &ldquo;access control systems chicago&rdquo; (1,300/mo) while organic compounds</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> CPSQL focus &mdash; aligned on quality, not volume</div>
+          <div style="font-size:0.79rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly WhatConverts + Agency Analytics reporting</div>
+        </div>
+        <div style="margin-top:0.85rem;background:var(--amber-light);border-radius:6px;padding:0.6rem 0.75rem;font-size:0.75rem;border-left:3px solid var(--amber)">
+          <strong>Cibes Symmetry benchmark:</strong> CPSQL reduced from $700 &rarr; $171 in 6 months after training Google on SQL conversion data.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1.25rem">Why This Fits TAC &mdash; The Business Case</div>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1.25rem">
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">1. The business has already proven it can win &mdash; the website is what&rsquo;s holding it back</div>
+          <div style="font-size:0.82rem;color:var(--text)">A #1 ranking, a #3 ranking, and a perfect 5.0&#9733; rating all exist today despite the site, not because of it. The current build generates 32 monthly visits while Althoff captures 1,780. That gap is a revenue problem, not just a marketing problem.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">2. A patched site can&rsquo;t fix a structural problem &mdash; a rebuild can</div>
+          <div style="font-size:0.82rem;color:var(--text)">Stuffed titles on 42 pages, three competing homepage variants, a 9.9MB homepage, and 520 missing ALTs aren&rsquo;t individual fixes &mdash; they&rsquo;re one architecture decision made 15 years ago. Rebuilding once resolves them all and gives every future content dollar a clean foundation.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">3. The gap keywords are winnable &mdash; low difficulty, local intent</div>
+          <div style="font-size:0.82rem;color:var(--text)">&ldquo;Access control systems chicago&rdquo; (KD 15), &ldquo;hvac building automation&rdquo; (KD 14), &ldquo;hvac automation&rdquo; (KD 19) &mdash; these are low-difficulty terms held by competitors with Authority Scores of 8&ndash;16, not national brands. Focused pages on a clean site can realistically take them.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">4. One partner, one monthly number, the full stack</div>
+          <div style="font-size:0.82rem;color:var(--text)">Website build, SEO content, local listings, review generation, hosting, and reporting under one team for one predictable monthly investment &mdash; no separate web developer, SEO vendor, and listings service to coordinate.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1rem">90-Day Launch Plan</div>
+
+      <div style="display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1rem">
+
+        <div style="border-left:3px solid var(--maroon);padding:0.75rem 1rem;background:var(--light-gray);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--maroon);margin-bottom:0.35rem">Days 1&ndash;30 &mdash; Technical Foundation</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">Kickoff + sitemap &amp; keyword plan built from the 69-keyword gap &middot; Website mockup designed &middot; GBP optimization + review generation launched &middot; Citation cleanup begins (Opendi completed, Bing/Facebook/MapQuest submitted)</div>
+        </div>
+
+        <div style="border-left:3px solid var(--amber);padding:0.75rem 1rem;background:var(--amber-light);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.35rem">Days 31&ndash;60 &mdash; Build &amp; Content</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">Site content written &mdash; clean, focused pages for every service and location &middot; Development on staging &middot; New pages drafted: Access Control Chicago, HVAC Building Automation, Building Automation Companies hub &middot; Internal QA review</div>
+        </div>
+
+        <div style="border-left:3px solid var(--green);padding:0.75rem 1rem;background:var(--green-light);border-radius:0 8px 8px 0">
+          <div style="font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.35rem">Days 61&ndash;90 &mdash; Launch</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.6">Website reveal, client edits, and go-live with the full 301 map consolidating all domain variants &middot; Keyword ranking baseline established &middot; Ongoing 3,000 words/month SEO content program begins &middot; Month 3 performance report delivered</div>
+        </div>
+
+      </div>
+
+      <div style="background:var(--green-light);border-radius:8px;padding:0.85rem 1rem;border:1px solid var(--green)">
+        <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.5rem">12-Month Targets</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;font-size:0.8rem">
+          <div><span style="color:var(--muted)">Organic Traffic:</span> <strong>32 &rarr; 400+/mo</strong></div>
+          <div><span style="color:var(--muted)">Keywords Ranking:</span> <strong>127 &rarr; 350+</strong></div>
+          <div><span style="color:var(--muted)">Top-10 Keywords:</span> <strong>6 &rarr; 40+</strong></div>
+          <div><span style="color:var(--muted)">GBP Reviews:</span> <strong>5 &rarr; 25+</strong></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div style="background:var(--charcoal);border-radius:10px;padding:2rem;margin-top:1rem">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.5rem">Why It Works &mdash; Conversion Training &amp; Maximum ROAS</div>
+        <div style="font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:0.75rem">The Power of Training Google on Sales Qualified Leads</div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:0.75rem">Reaching this level of AI-driven performance doesn&#39;t happen overnight. It requires <strong style="color:var(--white)">3&ndash;4 months of consistent, high-quality conversion data</strong> &mdash; specifically, quote values and proposal outcomes tied to each lead &mdash; so Google&#39;s machine learning can identify the behavioral patterns of high-value commercial facility prospects and allocate budget accordingly. WhatConverts captures the attribution; ClickCease protects the spend; and closed deals fed back into the system train the engine to optimize for SQL quality, not lead volume.</p>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6">Abstrakt also offers outbound appointment setting &mdash; our teams engage, qualify, and book facility and property-management prospects directly to TAC&#39;s sales calendar. Partners who combine inbound + paid + outbound average a <strong style="color:rgba(255,200,100,1)">2.1&times; increase in deal size</strong> and a <strong style="color:rgba(255,200,100,1)">3.55&times; average ROI</strong>.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;flex-shrink:0;min-width:150px">
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">$171</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">CPSQL (Cibes, 6 mo.)</div>
+        </div>
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">3.55x</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Avg. Client ROI</div>
+        </div>
+        <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:8px;padding:1rem">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">2.1x</div>
+          <div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Deal Size Increase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<div class="full-divider"></div>
+
+<section>
+  <div class="section-header">
+    <div class="section-number">09</div>
+    <h2 class="section-title">Our Process</h2>
+  </div>
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2rem">Every Abstrakt engagement runs through four coordinated phases. TAC would enter at Research and move through all four &mdash; building a site, ranking it, and scaling the leads it generates.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden">
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      <div style="font-size:1.1rem;font-weight:900;color:#D4920A;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Research</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Competitor Analysis</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Althoff Industries</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>BAS-DDC</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Stanton Mechanical</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:0.5rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keyword &amp; Opportunity Research</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Keyword Volume &amp; Difficulty</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Competitor Gaps</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>User Intent</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Sitemap Creation</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Content Roadmap</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border);background:var(--light-gray)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--red);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Build</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Build</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>90-Day Timeline</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>30 Pages</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Copy &amp; Design</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>15,000 Words</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Conversion-Focused Design</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Development</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>5 QA Checks</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Sales Assets</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Optional Add-On</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--maroon);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Optimize</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keyword &amp; Opportunity Research</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Site Health</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Core Web Vitals</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Lead Deliverability</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Technical SEO</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Internal Linking</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Crawlability</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Indexability</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Website Hosting</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>99% Uptime &amp; 24/7 Support</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;background:var(--light-gray)">
+      <div style="font-size:1.1rem;font-weight:900;color:var(--blue);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.25rem">Grow</div>
+      <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Content &amp; Distribution</div>
+      <ul style="list-style:none;margin-bottom:1rem;display:flex;flex-direction:column;gap:0.35rem">
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>4,000+ Words Monthly</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Social Distribution</li>
+        <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Entity Focused Content Strategy</li>
+      </ul>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem;margin-bottom:1rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Monthly Local SEO Optimization</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Top 65+ Local Directories</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Name, Address, &amp; Phone Strategy</li>
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Duplicate Listing Suppression</li>
+        </ul>
+      </div>
+      <div style="border-top:1px dashed var(--border);padding-top:0.75rem">
+        <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Monthly Results Reporting &amp; Consultation</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.35rem">
+          <li style="font-size:0.78rem;padding-left:0.9rem;position:relative"><span style="position:absolute;left:0;color:var(--maroon);font-size:0.6rem;top:3px">&#9632;</span>Partner Results Portal</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+
+<section>
+  <div class="section-header">
+    <div class="section-number">10</div>
+    <h2 class="section-title">Website Build Timeline</h2>
+  </div>
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2.5rem">From kickoff to go-live in 90 days &mdash; and then straight into the SEO growth phase. Here&rsquo;s exactly what happens and when.</p>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-radius:10px 10px 0 0;overflow:hidden">
+    <div style="background:var(--maroon);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 1</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Creation</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.08);line-height:1">01</div>
+    </div>
+    <div style="background:#2C2C2C;padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 2</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Development</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1">02</div>
+    </div>
+    <div style="background:var(--red);padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:0.2rem">Month 3</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Launch &#10003;</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.1);line-height:1">03</div>
+    </div>
+    <div style="background:#1A1A1A;padding:1.25rem 1.5rem;position:relative">
+      <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:0.2rem">Month 4+</div>
+      <div style="font-size:1.15rem;font-weight:900;color:var(--white);letter-spacing:0.02em;text-transform:uppercase">Ongoing</div>
+      <div style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);font-size:3rem;font-weight:900;color:rgba(255,255,255,0.06);line-height:1">04</div>
+    </div>
+  </div>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);background:var(--white);border-left:1px solid var(--border);border-right:1px solid var(--border)">
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--maroon);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--maroon)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:var(--charcoal)"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--charcoal);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--charcoal)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;border-right:1px solid var(--border);display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:var(--red)"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:var(--red);flex-shrink:0"></div>
+      <div style="flex:1;height:2px;background:var(--red)"></div>
+    </div>
+    <div style="padding:0.6rem 1.5rem;display:flex;align-items:center;gap:0.5rem">
+      <div style="flex:1;height:2px;background:#1A1A1A"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#1A1A1A;flex-shrink:0"></div>
+    </div>
+  </div>
+
+  
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;overflow:hidden;background:var(--white)">
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--maroon);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--maroon)">Kickoff Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--maroon)">
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap &amp; SEO keyword creation</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup</li>
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap edits</li>
+        </ul>
+      </div>
+      
+      <div>
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--muted);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted)">Progress Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--border)">
+          <li style="font-size:0.78rem;color:var(--text)">Sitemap approval</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup edits</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website &amp; domain access</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border);background:var(--cream)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--maroon);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--maroon)">Content Meeting</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--maroon)">
+          <li style="font-size:0.78rem;color:var(--text)">Website mockup approval</li>
+          <li style="font-size:0.78rem;color:var(--text)">Social media accesses</li>
+          <li style="font-size:0.78rem;color:var(--text)">Profile &amp; cover photos</li>
+        </ul>
+      </div>
+      
+      <div style="margin-bottom:1rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--charcoal);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--charcoal)">AMG Executes</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--charcoal)">
+          <li style="font-size:0.78rem;color:var(--text)">Website content creation</li>
+          <li style="font-size:0.78rem;color:var(--text)">Website development</li>
+          <li style="font-size:0.78rem;color:var(--text)">Internal Q&amp;A review</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;border-right:1px solid var(--border)">
+      
+      <div style="margin-bottom:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--maroon);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--maroon)">Website Reveal</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--maroon)">
+          <li style="font-size:0.78rem;color:var(--text)">Client reviews live site</li>
+          <li style="font-size:0.78rem;color:var(--text)">Edits provided by client</li>
+          <li style="font-size:0.78rem;color:var(--text)">AMG completes final edits</li>
+        </ul>
+      </div>
+      
+      <div style="background:var(--red);border-radius:8px;padding:0.85rem 1rem;text-align:center;margin-top:0.5rem">
+        <div style="font-size:0.6rem;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:0.15rem">End of Month 3</div>
+        <div style="font-size:1.2rem;font-weight:900;color:var(--white);letter-spacing:0.06em">&#9660; GO LIVE</div>
+      </div>
+    </div>
+
+    
+    <div style="padding:1.5rem;background:var(--cream)">
+      <div>
+        <div style="display:flex;align-items:center;gap:0.4rem;margin-bottom:0.6rem">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--maroon);flex-shrink:0"></div>
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--maroon)">Post-Launch Program</div>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.3rem;padding-left:1rem;border-left:2px solid var(--maroon)">
+          <li style="font-size:0.78rem;color:var(--text)">3,000 words SEO content/mo</li>
+          <li style="font-size:0.78rem;color:var(--text)">Local listing optimizations</li>
+          <li style="font-size:0.78rem;color:var(--text)">Monthly results meetings</li>
+          <li style="font-size:0.78rem;color:var(--text)">Review generation program</li>
+          <li style="font-size:0.78rem;color:var(--text)">GBP optimization &amp; posts</li>
+        </ul>
+        <div style="margin-top:1rem;background:var(--green-light);border-radius:6px;padding:0.6rem 0.75rem;border-left:3px solid var(--green)">
+          <div style="font-size:0.72rem;font-weight:700;color:var(--green)">Rankings begin compounding &#8599;</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<footer style="background:var(--maroon);padding:4rem 3rem;text-align:center">
+  <div style="max-width:800px;margin:0 auto">
+    
+    <div style="font-size:1.8rem;font-weight:800;color:var(--white);line-height:1.3;margin-bottom:0.75rem">
+      Chicago-area facility managers are actively searching for what TAC installs. Let&#39;s make sure they find TAC first.
+    </div>
+      
+    <div style="font-size:1.1rem;color:rgba(255,255,255,0.8);margin-bottom:2rem">
+      TAC has the expertise, the partnerships, and a perfect 5.0&#9733; reputation. Abstrakt builds the digital presence to match.
+    </div>
+    <a href="https://abstraktmg.com/contact" style="display:inline-block;background:var(--white);color:var(--maroon);font-weight:700;font-size:0.9rem;padding:0.85rem 2.5rem;border-radius:6px;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase">Get Started &rarr; abstraktmg.com/contact</a>
+    <div style="margin:2.5rem auto 1rem">
+      <div class="amg-logo" style="width:140px;height:38px;margin:0 auto;opacity:0.5"></div>
+    </div>
+    <div style="font-size:0.75rem;color:rgba(255,255,255,0.35);letter-spacing:0.04em">
+      Prepared by Abstrakt Marketing Group &middot; July 2026 &middot; Confidential
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
